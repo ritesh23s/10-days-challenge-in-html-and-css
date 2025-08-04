@@ -1,0 +1,91 @@
+/* Default adjustments for small screens */
+@media screen and (max-width: 1090px) {
+    html {
+        font-size: 70%;
+    }
+
+    .card .hero-details h1 {
+        font-size: 2.2rem;
+    }
+
+    .card .hero-details p,
+    .main-focus .nain-f-details p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablet size adjustments */
+@media screen and (max-width: 800px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card .hero-details,
+    .card .hero-profile {
+        width: 100%;
+    }
+
+    .card .hero-profile {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        padding: 0.5rem;
+    }
+
+    .main-focus .nain-f-details h1 {
+        font-size: 2rem;
+    }
+
+    .loader-div {
+        padding: 0.5rem;
+    }
+}
+
+/* Mobile optimizations */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 60%;
+    }
+
+    .card .hero-profile .img-profile img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    .card .hero-details h1 {
+        font-size: 1.8rem;
+    }
+
+    .card .hero-details p {
+        font-size: 1rem;
+    }
+
+    .loader-div {
+        border-radius: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    .loader.big,
+    .loader.minimal,
+    .loader.sort {
+        margin: 0.5rem auto;
+    }
+}
