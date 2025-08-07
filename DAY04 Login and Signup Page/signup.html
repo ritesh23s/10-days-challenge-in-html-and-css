@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="signup form design with inputs and submit button">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/user-male-circle--v1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Signup - Create Account</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Sign Up</h1>
+        <form action="/action" class="signup-form">
+            <div class="signup-div">
+                <label for="name"><i class='bx bxs-user'></i></label>
+                <input type="text" placeholder="Name" id="name" name="name" required>
+            </div>
+            <div class="signup-div">
+                <label for="email"><i class='bx bx-envelope'></i></label>
+                <input type="email" placeholder="Email" id="email" name="email" required>
+            </div>
+            <div class="signup-div">
+                <label for="tel"><i class='bx bxs-phone'></i></label>
+                <select name="countryCode" required style="height: 100%; border: none;">
+                    <option value="+91">IN +91</option>
+                    <option value="+1">US +1</option>
+                    <option value="+44">GB +44</option>
+                    <option value="+61">AU +61</option>
+                    <option value="+81">JP +81</option>
+                    <option value="+49">DE +49</option>
+                    <option value="+33">FR +33</option>
+                    <option value="+86">CN +86</option>
+                    <option value="+39">IT +39</option>
+                    <option value="+7">RU +7</option>
+                    <option value="+971">AE +971</option>
+                    <option value="+92">PK +92</option>
+                    <option value="+880">BD +880</option>
+                    <option value="+34">ES +34</option>
+                    <option value="+82">KR +82</option>
+                    <!-- Add more -->
+                </select>
+                <input type="tel" placeholder="Enter your number" id="tel" name="tel" pattern="[0-9]{6,14}" required>
+            </div>
+            <div class="signup-div">
+                <label for="password"><i class='bx bxs-lock-alt'></i></label>
+                <input type="password" placeholder="Password" id="password" name="pass" required>
+            </div>
+            <div class="signup-div" style="border: none;">
+                <input type="checkbox" id="checkbox" name="agreement" required>
+                <label id="agree" for="checkbox">I agree to the <a href="/#">Term and Conditions</a> </label>
+            </div>
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+        <span class="signup-span">Have an account? <a href="login.html">Login</a></span>
+    </div>
+</body>
+
+</html>

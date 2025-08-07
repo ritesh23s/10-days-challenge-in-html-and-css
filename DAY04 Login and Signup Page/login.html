@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="login form design with inputs and submit button">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/administrator-male.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Login</h1>
+        <form action="/action" class="login-form">
+            <h3>Email:</h3>
+            <div class="login-div">
+                <label for="email"><i class='bx bx-envelope'></i></label>
+                <input type="email" placeholder="Enter your email" id="email" name="email" required>
+            </div>
+            <h3>Password:</h3>
+            <div class="login-div">
+                <label for="password"><i class='bx bx-lock-alt'></i></label>
+                <input type="password" placeholder="Enter your password" name="pass" required>
+            </div>
+            <div class="pass-details login-div">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+                <span><a href="#">Forgot Password?</a></span>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <span>Don't have an account? <a href="signup.html">Sign up</a></span>
+    </div>
+</body>
+
+</html>
