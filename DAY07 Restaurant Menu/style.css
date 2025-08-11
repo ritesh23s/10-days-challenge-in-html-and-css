@@ -270,6 +270,9 @@ footer #name {
         flex-direction: column;
     }
 
+    footer {
+        height: auto;
+    }
 }
 
 @media (max-width: 369px) {
