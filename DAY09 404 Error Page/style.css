@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5dede;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding: 5rem 0.75rem;
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.75rem 1rem;
+    gap: 1rem;
+    background-color: whitesmoke;
+    border-radius: 0.75rem;
+}
+
+.main-container h1 {
+    color: #464141;
+}
+
+.main-container .error {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    gap: 0.5rem;
+    width: auto;
+
+}
+
+.main-container .error h1 {
+    font-size: 6.5rem;
+    color: #464141;
+}
+
+.main-container .error img {
+    height: 100%;
+    width: auto;
+}
+
+.main-container .page-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    color: #464141;
+}
+
+.main-container .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.main-container .btn button {
+    background-color: #e5dede;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    font-weight: 600;
+    height: 1.75rem;
+    width: 9rem;
+    color: #464141;
+}
+
+.main-container .btn button:hover {
+    cursor: pointer;
+    background-color: #d1caca;
+}
+
+.main-container .btn a {
+    text-decoration: none;
+    color: #464141;
+    font-weight: 600;
+}
+
+@media (max-width: 416px) {
+    html {
+        font-size: 77%;
+    }
+}
