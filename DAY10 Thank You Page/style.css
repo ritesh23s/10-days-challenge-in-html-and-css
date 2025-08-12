@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #FFF9F3;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    padding: 3rem 2rem;
+}
+
+.main-container {
+    background-color: #FFE6B3;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+}
+
+.main-container h1 , h2 {
+    color: #B23A1D;
+    
+}
+
+.main-container h1 {
+    margin-bottom: 2.5rem;
+}
+
+.tic-btn {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: #28A745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tic-btn i {
+    font-size: 5rem;
+    color: #FFE6B3;
+}
+
+.tic-btn {
+  animation: pop 0.4s ease;
+}
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.main-container .thank-you {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+    padding: 0.25rem 1.75rem;
+}
+
+.main-container .thank-you h2 {
+    font-size: 3.25rem;
+}
+
+.main-container .thank-you p {
+    max-width: 14rem;
+    align-self: center;
+    font-size: 1.3rem;
+    color: #3f3c39;
+}
+
+.main-container .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.main-container .btn button {
+    background-color: #B23A1D;
+    border: none;
+    border-radius: 0.25rem;
+    color: #FFE6B3;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    max-width: 15rem;
+    width: 12rem;
+    height: 2.75rem;
+    font-size: 1.01rem;
+}
+
+.main-container .btn button:hover {
+    background-color: #F2A65A;
+    color: #3B2F2F;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.main-container .btn span a {
+    text-decoration: none;
+    color: #3f3c39;
+    font-weight: 600;
+}
+
+@media (max-width: 528px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 472px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 393px) {
+    html {
+        font-size: 60%;
+    }
+}
