@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.main-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    max-width: 500px;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.main-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.day-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: #f1f1f1;
+    border-radius: 8px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+}
+
+.day .num {
+    background: #007BFF;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+
+.day i {
+    font-size: 1.2rem;
+    color: #007BFF;
+}
+
+.day:hover {
+    background: linear-gradient(135deg, #007BFF, #00B4D8);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 123, 255, 0.3);
+}
+
+.day:hover i,
+.day:hover .num {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.main-container p {
+    text-align: center;
+    margin: 0.25rem 0;
+}
+
+.main-container p #name {
+    font-weight: 700;
+}
